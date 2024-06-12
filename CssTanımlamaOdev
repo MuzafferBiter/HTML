@@ -1,0 +1,259 @@
+body {
+    background-color: aliceblue;
+  }
+  /* 1. satırda ki body elementi HTML'de sayfanın 
+  ana içeriğini içeren yapıdır. 2. satırda atamış olduğumuz  
+  "background-color burada web sayfamızın arka plan rengini 
+  belirlemektedir.*/
+  .container { /*".container" sınıfı HTML 
+    elementlerinin stilini belirler.*/
+    display: block; /*Elementlerin blok düzeninde görünmesini sağlar.*/
+    max-width: 100%; /*Elementlerin maksimum genişliğini içerdikleri diğer
+    elementlere veya içeriğe göre ayarlar.*/
+    margin: 0 auto; /*elementin sağ ve sol kenarlarını otomatik olarak hizalar.*/
+  }
+  .header { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente 
+    atanabilir ve bu elementlerin hepsine aynı stilin 
+    uygulanmasını sağlar.*/
+    background-color: white; /*Arka plan rengini beyaz olarak ayarlar.*/
+    padding: 1rem; /*1 rem ölçeğinde header içeriği ile kenarları 
+    arasında boşluk bırakır.*/
+    display: flex; /*Header elementinin içindeki öğeleri esnek bir düzen 
+    içinde hizalar.*/
+    width: 100%; /*Header elementinin genişliğini, 
+    içinde bulunduğu konteynerin genişliğine eşitler.*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Header'a burada girilen 
+    değerler oranında ve renginde gölge ekler.*/
+    position: fixed; /*Header elementinin konumunu, tarayıcı 
+    penceresine göre sabitler. */
+    top: 0; /*Header elementini ekranın üstüne sabitlemek için kullanılır.*/
+  }
+  .col2 { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente atanabilir 
+    ve bu elementlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 20%; /*col2  elementinin genişliğini, içinde bulunduğu 
+    konteynerin genişliğinin %20'si olarak ayarlar.*/
+    display: inline-block; /*col2 elementinin blok düzeni içinde 
+    değil de satır içi bir düzende görüntülenmesini sağlar.*/
+  }
+  .col6 { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente atanabilir 
+    ve bu elementlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 50%;
+    display: inline-block;
+  }
+  .col4 { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente atanabilir 
+    ve bu elementlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 32.33%;
+    display: inline-block;
+  }
+  .logo { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente atanabilir 
+    ve bu elementlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 60%; /*logo elementinin genişliğini, içinde bulunduğu 
+    konteynerin genişliğinin %60'ı olarak ayarlar.*/ 
+    height: auto; /*logo elementinin yüksekliğini otomatik olarak ayarlar.*/
+  }
+  .nav { /*Bu sınıf adı, HTML'de bir veya birden fazla elemente atanabilir 
+    ve bu elementlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    display: block; /*nav elementinin blok düzeninde 
+    görüntülenmesini sağlar.*/
+    width: 100%; /*nav elementinin genişliğini, içinde 
+    bulunduğu konteynerin genişliğine eşitler. */
+  }
+  .nav__list { /*Bu sınıf adı, HTML'de bir veya birden fazla 
+    liste (<ul> veya <ol>) elementine atanabilir ve bu 
+    listelerin hepsine aynı stilin uygulanmasını sağlar.*/
+    display: flex; /*nav__list elementini esnek bir düzen 
+    içinde görüntülemek için flexbox modelini kullanır. 
+    Bu, listedeki öğelerin yatay hizada veya dikey hizada 
+    (tercihe göre) düzenlenmesini sağlar.*/
+    justify-content: space-between; /*nav__list içindeki öğelerin 
+    arasındaki boşluğu en iyi şekilde kullanmak için, öğeler arasındaki 
+    boşlukları eşit olarak dağıtır.*/
+    list-style: none; /* Liste öğelerinin varsayılan işaretlerini 
+    (bullet veya numaralandırma) kaldırır. */
+    padding: 0; /*Liste öğelerinin iç kenar boşluğunu sıfırlar. Bu, 
+    listenin kenar boşluklarının olmamasını sağlar.*/
+  }
+  .nav__item { /*Bu sınıf adı, HTML'de bir veya birden fazla 
+    navigasyon menüsü öğesine atanabilir ve bu öğelerin hepsine 
+    aynı stilin uygulanmasını sağlar.*/
+    display: inline-block; /*nav__item elementini blok düzeni 
+    içinde değil, satır içi bir düzende görüntülemek için kullanır.*/
+    color: black; /*nav__item elementinin metin rengini siyah 
+    olarak ayarlar. */
+  }
+  .nav__link { /*Bu sınıf adı, HTML'de bir veya birden 
+    fazla navigasyon menüsü bağlantısına atanabilir 
+    ve bu bağlantıların hepsine aynı stilin uygulanmasını sağlar.*/
+    text-decoration: none; /*nav__link bağlantılarının altını çizmez. 
+    Bu, bağlantıların alt çizgisini kaldırarak daha 
+    temiz bir görünüm sağlar.*/
+    color: black; /*nav__link bağlantılarının metin rengini siyah 
+    olarak ayarlar. */
+  }
+  .nav__link:hover { /*nav__link bağlantılarının üzerine 
+    gelindiğinde (hover durumu), 
+    metin rengini belirli bir renk olarak değiştirir.*/
+    color: #e3531e; /*nav__link bağlantılarının üzerine gelindiğinde 
+    metin rengini #e3531e kodlu bir renk olarak değiştirir. */
+  }
+  .search { /*Bu sınıf adı, HTML'de bir veya birden fazla arama kutusuna 
+    atanabilir ve bu kutuların hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 30%; /*search elementinin genişliğini, içinde 
+    bulunduğu konteynerin genişliğinin %30'u olarak ayarlar. */
+    padding: 0.5rem; /*Arama kutusunun iç kenar 
+    boşluğunu belirler. 0.5rem birimini 
+    kullanarak belirli bir iç kenar boşluğu ayarlanmış olur.*/
+    border: 1px solid #ccc; /*Arama kutusuna kenarlık 
+    (border) ekler. Kenarlık, 1 piksel 
+    kalınlığında ve gri renkte bir kenarlık olarak ayarlanmıştır.*/
+    border-radius: 5px; /*Arama kutusunun köşelerine 
+    yuvarlaklık (border-radius) ekler. 
+    Bu, köşeleri yumuşatır ve daha modern bir görünüm sağlar.*/
+  }
+  .main { /*Bu sınıf adı, HTML'de bir veya birden fazla ana içerik bölümüne 
+    atanabilir ve bu bölümlerin hepsine aynı stilin uygulanmasını sağlar.*/
+    margin-top: 100px; /*main elementinin üst kenar boşluğunu 
+    100 piksel olarak ayarlar.*/
+    display: block; /*main elementinin blok düzeninde görüntülenmesini sağlar.*/
+    margin-bottom: 100px; /*main elementinin alt kenar boşluğunu 
+    100 piksel olarak ayarlar.*/
+  }
+  .col12 {
+    width: 100%;
+    display: inline-block;
+  }
+  .banner { /*Bu sınıf adı, HTML'de bir veya 
+    birden fazla banner (afiş) görüntüsüne 
+    atanabilir ve bu görüntülerin hepsine aynı stilin uygulanmasını sağlar.*/
+    width: 100%; /*banner elementinin genişliğini, içinde 
+    bulunduğu konteynerin genişliğine eşitler.*/
+    height: 300px; /*banner elementinin yüksekliğini 
+    300 piksel olarak ayarlar. */
+    object-fit: cover; /*banner elementinin içeriğini boyutlandırma ve 
+    yerleştirme işlemlerini yapar. İçeriği herhangi bir 
+    boşluk kalmayacak şekilde kaplamayı sağlar.*/
+  }
+  .sidebar { 
+    width: 19%; 
+    display: inline-block; 
+    float: left; 
+  }
+  .categories {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .categories__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .categories__list {
+    list-style: none;
+    padding: 0;
+  }
+  .categories__item {
+    margin-bottom: 0.5rem;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+  }
+  .categories__item:hover {
+    background-color: #e3531e;
+    color: white;
+  }
+  .categories__link {
+    text-decoration: none;
+    color: black;
+  }
+  .tags {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .tags__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .tags_list {
+    list-style: none;
+    padding: 0;
+  }
+  .tags_item {
+    margin-bottom: 0.5rem;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+  }
+  .tags_item:hover {
+    background-color: #e3531e;
+    color: white;
+  }
+  .content {
+    width: 80%;
+    display: inline-block;
+  }
+  .post {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .post__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .post__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .post__content {
+    font-size: 1rem;
+  }
+  .footer {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .social__list {
+    list-style: none;
+    padding: 0;
+  }
+  .social__item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .social__link {
+    text-decoration: none;
+    color: black;
+  }
+  .social__link:hover {
+    color: #e3531e;
+  }
+  .share_href {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e3531e;
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  .comment_button {
+    padding: 0.5rem 1rem;
+    background-color: #e3531e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .loadmore {
+    padding: 0.5rem 1rem;
+    background-color: #e3531e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 35%;
+    width: 30%;
+  }
