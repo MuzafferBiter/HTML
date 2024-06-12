@@ -1,0 +1,31 @@
+.container {
+    width: 30%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+button{
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    margin:8px 0;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+}
+button:hover{
+    background-color: #dd9a9f;
+    opacity: 0.8;
+}
+img{
+    width: 100%;
+    height: auto;
+
+}
+#h2{
+    text-align:center;
+}
+#h1{
+    text-align:center;
+}

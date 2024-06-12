@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Web Sitesi</title>
+    <style>
+        /* CSS ile header ve footer stilleri */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        ul >li{
+            display: inline;
+            margin-right: 100px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            list-style: none;
+        }
+        div > p{
+            display: inline;
+            margin-right: 100px;
+            background-color: brown;
+            color:white;
+            padding: 5px;
+        
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin-right: 0%;
+            padding-left: 25%;
+
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .boxs1{
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+        .boxs2{
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .boxs3{
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        }
+        .boxs3 > .box{
+            
+            display: flex;
+        }
+        .boxs2 {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 0;
+}
+
+.boxs2 .box {
+    height: 100px;
+    margin-right: 0; /* Sağdaki boşluğu kaldır */
+    display:flex;
+}
+
+
+    </style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <nav>
+            <a href="#">Anasayfa</a> |
+            <a href="#">Hakkımızda</a> |
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+
+    <!-- Ana içerik -->
+    <div>
+        <p>Bu bir örnek web sitesidir.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Telif Hakkı © 2024 Örnek Şirket. Tüm hakları saklıdır.</p>
+    </footer>
+
+ 
+    <div class="boxs1">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+   
+    <div class="boxs2">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+ 
+
+    <div class="boxs3">
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+    </div>
+</body>
+</html>

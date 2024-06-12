@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        nav ul li{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 90vh;
+        }
+        section{
+            text-align: center;
+            padding: 1rem;
+            flex: 1;
+        }
+        .kare{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border-radius: 0;
+        }
+        .daire{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Home</h1>
+            <div class="kare"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </section>
+        <section id="about">
+            <h1>about</h1>
+            <div class="kare"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </section>
+        <section id="Services">
+            <h1>Services</h1>
+            <div class="daire"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </section>
+        <section id="Contact">
+            <h1>Contact</h1>
+            <div class="daire"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+</body>
+</html>
